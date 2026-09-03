@@ -9,14 +9,16 @@
 
 ## 사용법
 1. VS code로 해당 프로그램을 clone 합니다.
-2. 해당 파일에서 터미널을 열고 requirements.txt의 내용을 설치합니다.
+2. 해당 파일(NewsAlert)에서 터미널을 열고  아래 내용을 입력합니다.
 ``` Terminal
 npm install
 ```
 - 이렇게 하면 package.json에서 알아서 모듈 내역을 보고 설치합니다.
 3. App.js에 가서 JavaScript 파일을 실행합니다.
 4. 실행한 해당 VS code window를 계속 실행해두면 매일 오전 8시 알림이 옵니다!
+- 설정에서 Terminal 알림을 허용해야 작동합니다!
 
 ## 향후 개발 계획
 - pm2 기반 백그라운드 동작 설정
 - 알림창 디자인 및 기능 개선
+- 현재 MacOS에서만 작동됨, 향후 Windows 버전 업그레이드 예정
