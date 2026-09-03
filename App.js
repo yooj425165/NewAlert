@@ -9,14 +9,16 @@ notifier.on("click", () => {
 
 function sendNotification() {
   notifier.notify({
-    title: "아침 알림 ⏰",
-    message: "좋은 아침입니다! 오늘의 일정을 확인하세요.",
+    title: "아침 뉴스 알림 📢",
+    message: "좋은 아침입니다! 오늘의 뉴스를 확인하세요.",
     sound: true,
     wait:true,
+    timeout:10,
+
   });
   console.log(`[${new Date().toLocaleString()}] 아침 알림이 발송되었습니다.`);
 }
-cron.schedule("* * * * *", () => {
+cron.schedule("0 8 * * *", () => {
   sendNotification();
 });
 
