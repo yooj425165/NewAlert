@@ -14,11 +14,17 @@
 npm install
 ```
 - 이렇게 하면 package.json에서 알아서 모듈 내역을 보고 설치합니다.
-3. App.js에 가서 JavaScript 파일을 실행합니다.
-4. 실행한 해당 VS code window를 계속 실행해두면 매일 오전 8시 알림이 옵니다!
+3. 터미널에 해당 명령어를 사용해 실행시킵니다
+``` Terminal
+npx pm2 start App.js
+```
+정지는
+``` Terminal
+npx pm2 stop App.js
+```
 - 설정에서 Terminal 알림을 허용해야 작동합니다!
 
 ## 향후 개발 계획
-- pm2 기반 백그라운드 동작 설정
-- 알림창 디자인 및 기능 개선
-- 현재 MacOS에서만 작동됨, 향후 Windows 버전 업그레이드 예정
+[x] pm2 기반 백그라운드 동작 설정
+[ ] 알림창 디자인 및 기능 개선
+[ ] 현재 MacOS에서만 작동됨, 향후 Windows 버전 업그레이드 예정
