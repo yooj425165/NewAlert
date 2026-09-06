@@ -18,11 +18,22 @@ npm install
 ``` Terminal
 npx pm2 start App.js
 ```
+하지만 이렇게만 하면 PC를 재부팅 시, 꺼지게 됩니다.
+따라서 해당 명령어를 입력하고,
+``` Terminal
+npx pm2 startup
+```
+`....sudo env PATH=$PATH....`라고 되어있는 곳을 통채로 복사해 터미널에 입력합니다.
+이후
+``` Terminal
+npx pm2 save
+```
+하시고 파일 접근 권한을 허용해주시면 앞으로 PC 재부팅 시에 파일이 같이 재시작 됩니다!
 정지는
 ``` Terminal
 npx pm2 stop App.js
 ```
-- 설정에서 Terminal 알림을 허용해야 작동합니다!
+- 또한, 설정에서 Terminal 알림을 허용해야 작동합니다!
 
 ## 향후 개발 계획
 [x] pm2 기반 백그라운드 동작 설정
